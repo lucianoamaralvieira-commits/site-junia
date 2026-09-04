@@ -1,0 +1,13 @@
+{
+  "name": "Junia Dourado Advocacia",
+  "short_name": "Junia Dourado",
+  "description": "Advogada de Inventário e Sucessões em Juiz de Fora – MG.",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#F8F7F4",
+  "theme_color": "#142B4A",
+  "icons": [
+    { "src": "/assets/favicon/favicon.png", "sizes": "any", "type": "image/png" }
+  ]
+}
