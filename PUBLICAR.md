@@ -47,26 +47,26 @@ Site 100% estático (HTML/CSS/JS, sem build). Dá para publicar de 3 jeitos.
 
 ## Opção C — Git pela linha de comando + Vercel
 
-### C.1 Instalar o Git (uma vez)
-Baixe em <https://git-scm.com/download/win> e instale com as opções padrão.
-(ou, no PowerShell:  `winget install --id Git.Git -e`  — vai pedir confirmação do Windows)
+### C.1 JÁ FEITO
+O Git foi instalado e o repositório local já está pronto nesta pasta:
+- `git init` feito, branch **main**
+- **1 commit** com todos os 53 arquivos ("Site institucional - Junia Dourado Advocacia")
+- remote **origin** = `https://github.com/lucianoamaralvieira-commits/site-junia.git`
 
-### C.2 Enviar para o GitHub
-Abra o **PowerShell** e rode, uma linha por vez:
+**Falta só o `push`** — que precisa do SEU login no GitHub (não dá para automatizar).
+
+### C.2 Enviar para o GitHub (você faz)
+Abra uma **NOVA janela do PowerShell** (ou Prompt) e rode:
 
 ```powershell
 cd "C:\Users\Junia\Downloads\junia-dourado-advocacia"
-git init
-git add .
-git commit -m "Site Junia Dourado Advocacia"
-git branch -M main
-git remote add origin https://github.com/lucianoamaralvieira-commits/site-junia.git
 git push -u origin main
 ```
 
-Na primeira vez o Git abre o navegador para **você fazer login no GitHub** — autorize.
-Se pedir usuário/senha: use seu usuário do GitHub e um **Personal Access Token** no lugar da senha
-(GitHub → Settings → Developer settings → Personal access tokens → Fine-grained → repo `site-junia`, permissão *Contents: Read and write*).
+Vai abrir o navegador para **login no GitHub** → autorize. Pronto.
+(Se disser que `git` não é reconhecido, feche e abra o PowerShell de novo, ou use o caminho completo `"C:\Program Files\Git\cmd\git.exe" push -u origin main`.)
+
+> Alternativa sem terminal: instale o **GitHub Desktop** → *File → Add local repository* → aponte para esta pasta → clique em **Push origin**. Ele faz o login numa janela e envia.
 
 ### C.3 Importar na Vercel
 Igual ao passo **B.2** acima.
